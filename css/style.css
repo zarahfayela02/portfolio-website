@@ -6,6 +6,34 @@
   padding: 0 15px;
 }
 
+#hero h1{
+  height: 100vh;              
+  padding: 500px 0px 0px 300px;
+  font-size: 3em;
+  
+  height: 100vh; /* full viewport height */
+  display: flex;
+  flex-direction: column; /* stack h1 lines */
+  justify-content: flex-start; /* start from top */
+  align-items: flex-start; /* left-aligned text */
+  padding: 18% 10% 0 10%; /* top padding moves it down from top, sides responsive */
+  box-sizing: border-box;
+}
+
+
+#expertise h2 {
+  margin-top: 50px;
+}
+
+#projects h2 {
+  margin-top: 50px;
+}
+
+#skillstools h2 {
+  margin-top: 50px;
+}
+
+
 header {
   background-color: #e6e3e0;
   border-bottom: 2px solid #524c4a4c; 
