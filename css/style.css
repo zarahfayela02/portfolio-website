@@ -2,14 +2,41 @@
   box-sizing: border-box;
 }
 
+.container {
+  padding: 0 15px;
+}
+
 header {
   background-color: #e6e3e0;
-  position: relative;
   border-bottom: 2px solid #524c4a4c; 
+  padding: 20px 40px;
+  width: 100%
+}
+
+header nav {
+  flex-grow: 1;
   display: flex;
-  justify-content: space-between;
-  align-items: center;        
-  padding: 15px 20px;
+  justify-content: flex-end; 
+}
+
+
+header .container {
+  display: flex;
+  justify-content: space-between; 
+  align-items: center;            
+  width: 100%;
+  max-width: none;
+
+}
+
+header .container > a,
+header .logo {
+  font-family: 'Schoolbell', cursive;
+  font-weight: 400;
+  font-size: 2em;
+  color: #000000;
+  text-decoration: none;
+  
 }
 
 
@@ -22,11 +49,13 @@ header > a {
 }
 
 
+
 header nav ul {
   display: flex;      
   list-style: none;  
+  justify-content: center;
   margin: 0;
-  padding: 25px;
+  padding: 0px;
   gap: 50px;          
 }
 
@@ -37,6 +66,7 @@ header nav a {
   color: #000000;
   text-decoration: none;
 }
+
 
 header nav a:hover {
   text-decoration: underline;
@@ -54,7 +84,8 @@ body {
 }
 
 main {
-  padding: 50px 250px;
+  padding: 100px 250px 50px; 
+  
 }
 
 h1, h2, h3, h4 {
@@ -81,10 +112,10 @@ img {
   width: 80%;
 }
 
-#logo-navigation {
-  padding-left: 0;
-  padding-right: 0;
+#navigation {
+  position: fixed;
 }
+
 
 footer {
   position: relative;
