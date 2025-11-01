@@ -122,30 +122,23 @@ img {
 
 
 
-.understand-section {
+.line-text-block {
   display: flex;
-  align-items: flex-start;
-  gap: 20px; /* space between line and text */
-  margin-top: 50px;
+  align-items: flex-start; /* keep text aligned to top of the line */
+  gap: 20px;               /* space between the line and text */
+  margin: 50px 0;          /* spacing around the whole block */
 }
 
-.vertical-line {
-  width: 2px;
-  background-color: #524c4a4c;
-  height: auto; /* matches text height */
-  min-height: 100%; /* ensures full height of text */
+.line-text-block .line {
+  width: 3px;                     /* thickness of the line */
+  background-color: #524c4a4c;    /* color */
+  border-radius: 3px;
+  height: auto;
+  min-height: 100%;               /* stretches with the text */
 }
 
-.understand-text {
-  flex: 1;
-}
-
-.understand-text h2 {
-  margin-top: 0;
-}
-
-.understand-text p {
-  margin-bottom: 10px;
+.line-text-block .text {
+  flex: 1;                        /* make text fill remaining space */
 }
 
 
