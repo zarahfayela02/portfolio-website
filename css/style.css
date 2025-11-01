@@ -7,11 +7,13 @@
 }
 
 
+
 header {
   background-color: #fffdfc;
   border-bottom: 2px solid #524c4a4c; 
   padding: 20px 40px;
   width: 100%
+
 }
 
 header nav {
@@ -118,33 +120,122 @@ img {
 }
 
 
+
+
+.understand-section {
+  display: flex;
+  align-items: flex-start;
+  gap: 20px; /* space between line and text */
+  margin-top: 50px;
+}
+
+.vertical-line {
+  width: 2px;
+  background-color: #524c4a4c;
+  height: auto; /* matches text height */
+  min-height: 100%; /* ensures full height of text */
+}
+
+.understand-text {
+  flex: 1;
+}
+
+.understand-text h2 {
+  margin-top: 0;
+}
+
+.understand-text p {
+  margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 #hero h1{
   height: 100vh;              
   padding: 500px 0px 0px 300px;
   font-size: 3em;
-  
-  height: 100vh; /* full viewport height */
+  height: 100vh;
   display: flex;
-  flex-direction: column; /* stack h1 lines */
-  justify-content: flex-start; /* start from top */
-  align-items: flex-start; /* left-aligned text */
-  padding: 18% 10% 0 10%; /* top padding moves it down from top, sides responsive */
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 18% 10% 0 10%;
   box-sizing: border-box;
 }
 
 
 #expertise h2 {
-  margin-top: 50px;
+  margin-top: 80px;
+  font-size: 2.5em;
 }
 
 #projects h2 {
-  margin-top: 50px;
+  margin-top: 80px;
+  font-size: 2.5em;
   
 }
 
 #skillstools h2 {
-  margin-top: 50px;
+  margin-top: 80px;
+  font-size: 2.5em;
 }
+
+
+
+#expertise {
+  display: block;
+}
+
+
+#expertise h3 {
+  text-align: right;               /* text aligns right */
+  margin-top: 50px;
+  border-top: 2px solid #524c4a4c; /* line on top */
+  width: 50%;                      /* line width */
+  margin-left: auto;                /* push block to the right */
+  padding-top: 20px;
+}
+
+#expertise p {
+  text-align: right;               /* paragraph text aligns right */
+  max-width: 40%;                  /* optional width */
+  margin: 0;
+  margin-left: auto;               /* push block to the right */
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
