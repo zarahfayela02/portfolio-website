@@ -6,36 +6,9 @@
   padding: 0 15px;
 }
 
-#hero h1{
-  height: 100vh;              
-  padding: 500px 0px 0px 300px;
-  font-size: 3em;
-  
-  height: 100vh; /* full viewport height */
-  display: flex;
-  flex-direction: column; /* stack h1 lines */
-  justify-content: flex-start; /* start from top */
-  align-items: flex-start; /* left-aligned text */
-  padding: 18% 10% 0 10%; /* top padding moves it down from top, sides responsive */
-  box-sizing: border-box;
-}
-
-
-#expertise h2 {
-  margin-top: 50px;
-}
-
-#projects h2 {
-  margin-top: 50px;
-}
-
-#skillstools h2 {
-  margin-top: 50px;
-}
-
 
 header {
-  background-color: #e6e3e0;
+  background-color: #fffdfc;
   border-bottom: 2px solid #524c4a4c; 
   padding: 20px 40px;
   width: 100%
@@ -102,7 +75,7 @@ header nav a:hover {
 
 
 body {
-  background-color: #e6e3e0;
+  background-color: #fffdfc;
   font-family: 'Roboto', sans-serif;
   font-size: 16px;
   font-weight: 300;
@@ -145,9 +118,37 @@ img {
 }
 
 
+#hero h1{
+  height: 100vh;              
+  padding: 500px 0px 0px 300px;
+  font-size: 3em;
+  
+  height: 100vh; /* full viewport height */
+  display: flex;
+  flex-direction: column; /* stack h1 lines */
+  justify-content: flex-start; /* start from top */
+  align-items: flex-start; /* left-aligned text */
+  padding: 18% 10% 0 10%; /* top padding moves it down from top, sides responsive */
+  box-sizing: border-box;
+}
+
+
+#expertise h2 {
+  margin-top: 50px;
+}
+
+#projects h2 {
+  margin-top: 50px;
+}
+
+#skillstools h2 {
+  margin-top: 50px;
+}
+
+
 footer {
   position: relative;
-  background-color: #e6e3e0;
+  background-color: #fffdfc;
   color: #342d2d;
   padding: 0px 250px;
 }
