@@ -22,7 +22,7 @@
   <body>
   <header id="navigation">
     <div class="container">
-    <a href="/index.html"><b>ZARAH-FAYE LA</b></a> 
+    <a href="index.html"><b>ZARAH-FAYE LA</b></a> 
     <nav>
       <ul>
       <li><a href="index.html">Work</a></li>
@@ -37,16 +37,16 @@
         <div id="description">
           <div class="container">
           <h1>About Me: Zarah-Faye La</h1>
-        </div>
+       
+          <div class="row" id="description">
+          <div class="col-md-6">
+            <picture>
+              <source srcset="./img/me.jpg" media="(max-width:767px)">
+              <img src="./img/me.jpg" alt="Profile Picture" style="width:350px; height:auto;">
+            </picture>
+          </div>
 
-        <div>
-          <picture>
-            <source srcset="./img/me.jpg" media="(max-width:767px)" >
-            <img src="./img/me.jpg" alt="Profile Picture" style="width:350px; height:auto;"/>
-          </picture>
-        </div>
-
-        <div id="description2"> 
+          <div class="col-md-6" id="description2">
           <h2>My Story</h2>
           <p>Hello, my name is Zarah-Faye La, and I am based in Vienna, Austria.</p>
           <p>
@@ -70,26 +70,30 @@
             impact in mind.
           </p>
           <a href="./files/la_cv.pdf" class="button contact" download>Download my CV</a>
-
-
+          </div>
         </div>
 
-        <div id="skillstools">
+        
+
+
+
+
+        <div id="skillstools" class="container">
           <h2>Skills and Tools</h2>
-
-          <div>
-            <h3>Relevant Skills</h3>
-            <ul>
-              <li>User Research</li>
-              <li>User Flows & Information Architecture</li>
-              <li>Wireframing & Prototyping (low to high)</li>
-              <li>Accessibility & Inclusivity</li>
-              <li>Problem-Solving</li>
-              <li>Usability Testing & Iteration</li>
-            </ul>
-          </div>
-
-          <div>
+          <div class="row">
+          <div class="col-md-6">
+          <h3>Relevant Skills</h3>
+          <ul>
+            <li>User Research</li>
+            <li>User Flows & Information Architecture</li>
+            <li>Wireframing & Prototyping (low to high)</li>
+            <li>Accessibility & Inclusivity</li>
+            <li>Problem-Solving</li>
+            <li>Usability Testing & Iteration</li>
+          </ul>
+        </div>
+    
+        <div class="col-md-6">
             <h3>Tools</h3>
             <ul>
               <li>Figma</li>
@@ -98,12 +102,15 @@
               <li>Photoshop</li>
               <li>Uxtweak</li>
             </ul>
-          </div>
+        </div>
         </div>
       </div>
     </main>
 
+
+
   <footer id="contact">
+    <div class="container">
     <div>
       <div>
       <h2>Get in Touch</h2>
