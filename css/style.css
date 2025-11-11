@@ -116,6 +116,17 @@ img {
   width: 80%;
 }
 
+
+.image-container img {
+  width: auto;      /* keep desktop original size */
+  max-width: 100%;  /* shrink if container is smaller (mobile) */
+  height: auto;
+  display: block;   /* remove bottom spacing */
+  margin: 0 auto;   /* center image */
+}
+
+
+
 #navigation {
   position: fixed;
 }
