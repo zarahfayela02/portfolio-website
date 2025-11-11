@@ -22,6 +22,7 @@ header nav {
   flex-grow: 1;
   display: flex;
   justify-content: flex-end; 
+  background-color: #fffdfc;
 }
 
 
@@ -31,6 +32,7 @@ header .container {
   align-items: center;            
   width: 100%;
   max-width: none;
+  
 
 }
 
@@ -41,6 +43,7 @@ header .logo {
   font-size: 2em;
   color: #000000;
   text-decoration: none;
+  background-color: #fffdfc;
   
 }
 
@@ -129,6 +132,8 @@ img {
 
 #navigation {
   position: fixed;
+  background-color: #fffdfc; /* solid background so hero doesn’t show through */
+  z-index: 1000; 
 }
 
 
@@ -244,6 +249,7 @@ img {
 }
 
 
+
 #expertise h2 {
   margin-top: 80px;
   font-size: 2.5em;
@@ -334,6 +340,11 @@ img {
   }
 }
 
+#about-picture {
+  width: 100%;      /* fills the container by default */
+  max-width: 700px; /* keeps original size on large screens */
+  height: auto;     /* maintains aspect ratio */
+}
 
 
 
