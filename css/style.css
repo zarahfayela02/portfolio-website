@@ -13,9 +13,13 @@
 header {
   background-color: #fffdfc;
   border-bottom: 2px solid #524c4a4c; 
-  padding: 20px 40px;
+  padding: 10px 4px;
   width: 100%
 
+}
+
+main {
+  padding-top: 56px;
 }
 
 header nav {
@@ -30,9 +34,7 @@ header .container {
   display: flex;
   justify-content: space-between; 
   align-items: center;            
-  width: 100%;
-  max-width: none;
-  
+  width: 100%;  
 
 }
 
@@ -85,6 +87,10 @@ nav {
   width: 100%;
 }
 
+
+
+
+
 .navtoggle li:not(:last-child) {
   display: none;
 }
@@ -101,23 +107,23 @@ nav {
   top: 20px;
   font-size: 20px;
   padding-left: 100;
+  padding-right: 0
 }
 
 .navtoggle .icon {
-  display: block; /* visible by default on small screens */
-}
-
-.navtoggle.responsive li  {
   display: block;
 }
+
 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
 }
+
 .navtoggle.responsive li  {
   display: block;
   padding: 10px 0;
 }
+
 
 .navtoggle.responsive li:last-child  {
   padding: 0 0 10px;
