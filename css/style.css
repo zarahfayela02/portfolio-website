@@ -80,6 +80,10 @@ header nav a:hover {
   text-decoration: underline;
 }
 
+nav {
+  display: inline-block;
+  width: 100%;
+}
 
 .navtoggle li:not(:last-child) {
   display: none;
@@ -101,6 +105,22 @@ header nav a:hover {
 
 .navtoggle .icon {
   display: block; /* visible by default on small screens */
+}
+
+.navtoggle.responsive li  {
+  display: block;
+}
+
+.navtoggle.responsive nav {
+  padding: 24px 0 0;
+}
+.navtoggle.responsive li  {
+  display: block;
+  padding: 10px 0;
+}
+
+.navtoggle.responsive li:last-child  {
+  padding: 0 0 10px;
 }
 
 
@@ -424,25 +444,28 @@ footer .button.contact {
 
 @media (min-width: 641px){
   nav > ul > li {
-  display: inline-block;
+    display: inline-block;
   }
   .navtoggle li:not(:last-child) {
-  display: inline-block;
+    display: inline-block;
   }
 
   .navtoggle li:not(:last-child) {
-  display: inline-block;
+    display: inline-block;
   }
 
   .hamburger {
     display: none;
+  }
 
-    }
+  nav > ul {
+  margin: 1em 0;
+  }
+  
 }
 
 
 @media (max-width: 640px) {
-  /* Hide menu items initially */
   .navtoggle li:not(.icon) {
     display: left;
     width: 100%;
@@ -474,9 +497,8 @@ footer .button.contact {
   }
 
   header nav ul {
-    flex-direction: column;
+    flex-direction: row;
     align-items: flex-start;
-    gap: 5px;
   }
 
   main {
