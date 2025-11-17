@@ -16,3 +16,8 @@ window.addEventListener('scroll', () => {
     heroText.style.opacity = 1; // fully visible above header
   }
 });
+
+
+function menuToggle() {
+  var x = document.getElementById('myNavtoggle');
+}

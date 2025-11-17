@@ -64,6 +64,7 @@ header nav ul {
   margin: 0;
   padding: 0px;
   gap: 50px;          
+  align-items: center;
 }
 
 
@@ -77,6 +78,29 @@ header nav a {
 
 header nav a:hover {
   text-decoration: underline;
+}
+
+
+.navtoggle li:not(:last-child) {
+  display: none;
+}
+
+
+.navtoggle, .navtoggle.responsive {
+  position: relative;
+}
+
+
+.navtoggle li .icon {
+  position: left;
+  right: 0;
+  top: 20px;
+  font-size: 20px;
+  padding-left: 100;
+}
+
+.navtoggle .icon {
+  display: block; /* visible by default on small screens */
 }
 
 
@@ -341,9 +365,9 @@ img {
 }
 
 #about-picture {
-  width: 100%;      /* fills the container by default */
-  max-width: 700px; /* keeps original size on large screens */
-  height: auto;     /* maintains aspect ratio */
+  width: 100%;
+  max-width: 700px;
+  height: auto;    
 }
 
 
@@ -397,6 +421,36 @@ footer .button.contact {
 }
 
 
+
+@media (min-width: 641px){
+  nav > ul > li {
+  display: inline-block;
+  }
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+  }
+
+  .navtoggle li:not(:last-child) {
+  display: inline-block;
+  }
+
+  .hamburger {
+    display: none;
+
+    }
+}
+
+
+@media (max-width: 640px) {
+  /* Hide menu items initially */
+  .navtoggle li:not(.icon) {
+    display: left;
+    width: 100%;
+  }
+}
+
+
+
 @media (max-width: 1024px) {
   main {
     padding: 80px 100px 40px;
@@ -406,6 +460,7 @@ footer .button.contact {
     padding: 0 100px;
   }
 }
+
 
 @media (max-width: 768px) {
   header {
@@ -460,4 +515,4 @@ footer .button.contact {
   img {
     width: 100%;
   }
-}
+  }
