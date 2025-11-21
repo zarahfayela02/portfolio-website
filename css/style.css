@@ -219,10 +219,10 @@ header nav a:hover {
   display: block;
 }
 
-
+/* 
 .navtoggle.responsive nav {
   padding: 24px 0 0;
-}
+} */
 
 .navtoggle.responsive li  {
   display: block;
@@ -362,7 +362,6 @@ img {
   flex-direction: column;
   justify-content: flex-start;
   padding-left: 8px;
-  padding-right: 40px;
 }
 
 
@@ -388,7 +387,6 @@ img {
 #description h1 {
   margin-top: 114px;
   padding-left: 9px;
-  padding-right: px;
 }
 
 
@@ -543,7 +541,7 @@ footer .button.contact {
   text-align: center;
   width: fit-content; 
   max-width: 200px; 
-  transition-duration: 0.2s opacity;
+  transition: opacity 0.2s;
 }
 
 .submitbutton {
@@ -558,8 +556,7 @@ footer .button.contact {
   text-align: center;
   width: fit-content; 
   max-width: 200px; 
-  transition-duration: 0.2s opacity;
-  margin: 0 auto;
+  transition: opacity 0.2s;  margin: 0 auto;
   display: block;
 }
 
@@ -592,6 +589,8 @@ footer .button.contact {
 
    #myNavtoggle {
     flex-direction: row; /* put logo + nav in one line */
+    justify-content: space-between;
+    align-items: center;
   }
   .hamburger {
     display: none;
@@ -606,7 +605,6 @@ footer .button.contact {
   display: flex;
   flex-direction: column; /* stack heading + form vertically */
   justify-content: center; /* vertical centering */
-  align-items: left; /* horizontal centering */
   box-sizing: border-box;
   }
 
@@ -643,7 +641,28 @@ footer .button.contact {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+      width: 100%;
   }
+
+  .hamburger {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    margin-top: 10px;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* Ensure all menu items (except hamburger) show */
+  nav ul li:not(.hamburger) {
+    display: inline-block;
+  }
+
 
   .navtoggle li:not(.icon) {
     width: 100%;
@@ -659,8 +678,7 @@ footer .button.contact {
   border: 1px solid #ccc;
   border-radius: 4px;
   width: 100%;
-
-}
+    }
 
 #message {
   resize: none;
@@ -681,6 +699,7 @@ footer .button.contact {
   .contact-form .field {
     margin-bottom: 10px; /* reduce bottom gap only on small screens */
   }
+
 }
 
 
