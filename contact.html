@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Zarah-Faye La">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Portfolio from Zarah-Faye La</title>
+
+    <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Schoolbell&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+</head>
+
+<body>
+  <header id="navigation">
+    <div class="container">
+    <div class="navtoggle" id="myNavtoggle">
+    <a href="index.html" class="logo"><b>ZARAH-FAYE LA</b></a> 
+    <nav>
+      <ul>
+      <li><a href="index.html">Work</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li class="hamburger"><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
+      </ul>
+    </nav>
+    </div>
+    </div>
+  </header>
+
+  <main>
+    <div class="container">
+    <div class="contactpage">
+        <h2>Get in touch!</h2>
+        <p>Leave your message and we'll get back to you shortly!</p>
+
+    <form class="contact-form" action="#" method="post" enctype="multipart/form-data">
+
+        <div class="row">
+        <div class="field">
+            <label for="firstName">First Name</label>
+            <input type="text" id="firstName" name="firstName" placeholder="Anna">
+        </div>    
+        <div class="field">
+            <label for="lastName">Last Name</label>
+            <input type="text" id="lastName" name="lastName" placeholder="Example">
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="field">
+            <label for="email">Email *</label>
+            <input type="email" id="email" name="email" placeholder="example@domain.com" required>
+        </div>
+        <div class="field">
+            <label for="phone">Phone</label>
+            <input type="tel" id="phone" name="phone" placeholder="+43 0000 000000">
+        </div>
+        </div>
+    
+        <div class="field">
+            <label for="message">Message *</label>
+            <textarea id="message" name="message" placeholder="Your questions or comments" required></textarea>
+        </div>
+
+        <div class="row">
+        <div class="field">
+            <label>Attachments</label>
+            <p class="file-info">
+            Allowed file types: jpg, jpeg, png, gif, pdf, doc, docx, & less than 100 MB.
+            </p>
+        </div>
+        </div>
+
+        <div class="row">
+        <div class="field">
+            <div class="file-upload">
+            <input type="file" id="file" name="file" class="file-input">
+            <label for="file" class="file-label">Choose file or drop here</label>
+            <span id="file-name"></span>
+            </div>
+        </div>
+        </div>
+    </form>
+    </div>
+    <div>
+    <button type="submit" class="button">Submit</button>
+    </div>
+    </div>   
+</main>
+
