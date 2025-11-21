@@ -91,6 +91,14 @@ label {
   
 }
 
+#myNavtoggle {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+
 .contact-form .form-label {
   font-size: 16px; /* adjust size as needed */
   font-weight: bold;
@@ -120,12 +128,13 @@ main {
   padding-top: 56px;
 }
 
-header nav {
+/* header nav {
   flex-grow: 1;
   display: flex;
   justify-content: flex-end; 
   background-color: #fffdfc;
-}
+} */
+
 
 
 header .container {
@@ -133,7 +142,6 @@ header .container {
   justify-content: space-between; 
   align-items: center;            
   width: 100%;  
-
 }
 
 header .container > a,
@@ -144,7 +152,7 @@ header .logo {
   color: #000000;
   text-decoration: none;
   background-color: #fffdfc;
-  
+  min-width: 30%;
 }
 
 
@@ -180,10 +188,10 @@ header nav a:hover {
   text-decoration: underline;
 }
 
-nav {
+/* nav {
   display: inline-block;
   width: 100%;
-}
+} */
 
 
 
@@ -200,11 +208,10 @@ nav {
 
 
 .navtoggle li .icon {
-  position: left;
   right: 0;
   top: 20px;
   font-size: 20px;
-  padding-left: 100;
+  /* padding-left: 100; */
   padding-right: 0
 }
 
@@ -323,7 +330,6 @@ img {
 
 #skillstools .col-md-6 {
   padding-left: 10px;
-  padding-right:-80px;
 }
 
 
@@ -584,6 +590,9 @@ footer .button.contact {
     display: inline-block;
   }
 
+   #myNavtoggle {
+    flex-direction: row; /* put logo + nav in one line */
+  }
   .hamburger {
     display: none;
   }
@@ -591,7 +600,6 @@ footer .button.contact {
   nav > ul {
   margin: 1em 0;
   }
-
   
   
   .contactpage {
@@ -629,7 +637,13 @@ footer .button.contact {
   justify-content: space-between;
   align-items: center;
 }
-  
+
+  #myNavtoggle {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
 
   .navtoggle li:not(.icon) {
     width: 100%;
@@ -695,7 +709,7 @@ footer .button.contact {
 
   header nav ul {
     flex-direction: row;
-    align-items: flex-start;
+    align-items: center;
   }
 
   main {
