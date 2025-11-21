@@ -9,6 +9,103 @@
   margin-right: auto;
 }
 
+.file-input {
+  display: none; /* hide default button */
+}
+
+.file-label {
+  display: inline-block;
+  cursor: pointer;
+  color: #1b68bb; /* optional: make it look clickable */
+  text-decoration: underline;
+  margin-top: 5px;
+  font-size: 16px;
+}
+
+.file-upload {
+  border: 2px dashed #ccc; /* dashed box */
+  border-radius: 4px;       /* rounded corners */
+  text-align: center;        /* center the label */
+  cursor: pointer;
+  transition: border-color 0.3s;
+  width: 100%;
+  height: 80px;
+  padding: 20px; /* <-- THIS makes the box look full */
+  box-sizing: border-box; /* ensures padding doesn’t increase total size */
+  margin-top: -20px;
+}
+
+
+.file-upload:hover {
+  border-color: #007BFF;    /* change color on hover */
+}
+
+
+#file-name {
+  display: block;
+  margin-top: 5px;
+  font-size: 14px;
+  color: #333;
+}
+
+
+#message {
+  resize: none;
+  height: 80px;
+  width: 56%;
+  }
+
+
+
+label {
+  font-size: 24px; /* like h2 */
+  font-weight: bold;
+}
+
+.contactpage {
+  max-width: 450px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.contactpage h2 {
+  margin-bottom: 15px; /* adjust this value as you like */
+}
+
+.contactpage p {
+  margin-top: 0; /* removes extra space */
+  margin-bottom: 30px; /* spacing before the form */
+}
+
+.contact-form .field.full-width {
+  flex: 1 1 100%; /* take full width of the row */
+}
+
+.contact-form .field {
+  display: flex;
+  flex-direction: column; /* stack label on top of input */
+  margin-bottom: 20px;
+  
+}
+
+.contact-form .form-label {
+  font-size: 16px; /* adjust size as needed */
+  font-weight: bold;
+  margin-bottom: 8px; /* space between label and input */
+}
+
+.contact-form input,
+.contact-form textarea {
+  padding: 10px;
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+
+
 
 header {
   background-color: #fffdfc;
@@ -224,8 +321,8 @@ img {
 
 
 #skillstools .col-md-6 {
-  padding-left: 20px;
-  padding-right: 80px;
+  padding-left: 10px;
+  padding-right:-80px;
 }
 
 
@@ -257,6 +354,8 @@ img {
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
+  padding-left: 8px;
+  padding-right: 40px;
 }
 
 
@@ -280,7 +379,9 @@ img {
 }
 
 #description h1 {
-  margin-top: 150px;
+  margin-top: 114px;
+  padding-left: 9px;
+  padding-right: px;
 }
 
 
@@ -419,6 +520,9 @@ footer .button.contact {
   margin-bottom: 20px; 
 }
 
+#buttonfooter {
+  margin-bottom: 20px;
+  }
 
 .button {
   display: inline-block;
@@ -449,6 +553,8 @@ footer .button.contact {
 
 
 @media (min-width: 641px){
+
+  
   nav > ul > li {
     display: inline-block;
   }
@@ -467,14 +573,81 @@ footer .button.contact {
   nav > ul {
   margin: 1em 0;
   }
+
   
+  
+  .contactpage {
+  display: flex;
+  flex-direction: column; /* stack heading + form vertically */
+  justify-content: center; /* vertical centering */
+  align-items: left; /* horizontal centering */
+  box-sizing: border-box;
+  }
+
+  #message {
+  resize: none;
+  height: 80px;
+  width: 89%;
+  }
+
+
+  .row {
+    display: flex;
+    gap: 30px; /* space between First + Last, Email + Phone */
+  }
+ .file-upload {
+    width: 170%;
+  }
+
 }
 
 
+
 @media (max-width: 640px) {
+
+.navtoggle {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+  
+
   .navtoggle li:not(.icon) {
-    display: left;
     width: 100%;
+  }
+
+  .contactpage {
+  padding: 50px 15px 30px 15px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+  font-size: 14px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  width: 100%;
+
+}
+
+#message {
+  resize: none;
+  height: 80px;
+  width: 100%;
+  }
+
+#file {
+  height: 80px;
+   width: 100%;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 10px; /* smaller spacing between fields */
+  }
+
+  .contact-form .field {
+    margin-bottom: 10px; /* reduce bottom gap only on small screens */
   }
 }
 
