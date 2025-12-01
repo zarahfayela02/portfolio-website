@@ -648,9 +648,14 @@ footer .button.contact {
     margin: 10px 0;
   }
 
+  header nav ul {
+  display: column;
+  flex-direction: column; 
+  }
+
   nav ul {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     gap: 30px;
     margin-top: 10px;
     justify-content: center;
