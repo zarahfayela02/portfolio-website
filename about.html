@@ -1,144 +1,226 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-<head>
+  <head>
     <meta charset="UTF-8">
     <meta name="author" content="Zarah-Faye La">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>About me: Zarah-Faye La</title>
-    
+
     <link rel="stylesheet" type="text/css" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com"> 
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Schoolbell&display=swap" rel="stylesheet">
 
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
 
     <link rel="stylesheet" type="text/css" href="css/style.css">
   </head>
-  
-<body>
-  <header id="navigation">
-    <div class="container">
-    <div class="navtoggle" id="myNavtoggle">
-    <a href="index.html" class="logo"><b>ZARAH-FAYE LA</b></a> 
-    <nav>
-      <ul>
-      <li><a href="carousel/work.html">Work</a></li>
-      <li><a href="about.html">About</a></li>
-      <li><a href="contact.html">Contact</a></li>
-      <li class="hamburger"><a href="javascript:void(0);" class="icon" onclick="menuToggle()"><i class="fas fa-bars"></i></a></li>
-      </ul>
-    </nav>
-    </div>
-    </div>
-  </header>
 
-  <main>
-      <div id="description">
-        <div class="container">
-        <h1>About Me</h1>
-       
-        <div class="row">
-        <div class="col-md-6">
-          <picture>
-            <source srcset="./img/me.jpg" media="(max-width:767px)">
-            <img src="./img/me.jpg" alt="Profile Picture" style="width:230px; height:auto;" class="profile-pic">
-          </picture>
-        </div>
-
-        <div class="col-md-6" id="description2">
-        <h2>My Story</h2>
-        <p>Hello, my name is Zarah-Faye La, and I am based in Vienna, Austria.</p>
-        <p>
-            I come from a background in Interior and Surface Design as well as Graphic Design,
-            which has given me a strong foundation in visual storytelling, layout, and creative
-            problem-solving. Over time, I realized that I am particularly passionate about
-            designing experiences that are both visually appealing and user-friendly, which led
-            me to expand my skills into the field of UX and UI design.
-        </p>
-        <p>
-            Currently, I am focused on developing my expertise as a Graphic/UX Designer,
-            combining my design sensibility with user-centered thinking. I enjoy the entire
-            design process — from research and ideation to wireframing, prototyping, and testing
-            — and I enjoy turning ideas and insights into easy-to-use and attractive designs.
-        </p>
-        <p>
-            My multidisciplinary background allows me to approach projects with both an artistic
-            eye and a practical mindset, ensuring that the solutions I create are functional,
-            accessible, and engaging. I thrive in collaborative environments and am motivated by
-            projects that challenge me to grow, work across disciplines, and design with real
-            impact in mind.
-        </p>
-        <a href="./files/la_cv.pdf" class="button contact" download>Download my CV</a>
-        </div>
-        </div>
+  <body>
+    <header id="navigation">
+      <div class="container">
+        <div class="navtoggle" id="myNavtoggle">
+          <a href="index.html" class="logo"><b>ZARAH-FAYE LA</b></a>
+          <nav>
+            <ul>
+              <li><a href="carousel/work.html">Work</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li class="hamburger">
+                <a
+                  href="javascript:void(0);"
+                  class="icon"
+                  onclick="menuToggle()"
+                  ><i class="fas fa-bars"></i
+                ></a>
+              </li>
+            </ul>
+          </nav>
         </div>
       </div>
+    </header>
 
-        
+    <main>
+      <div id="description">
+        <div class="container">
+          <h1>About Me</h1>
 
+          <div class="row">
+            <div class="col-md-6">
+              <picture>
+                <source srcset="./img/me.jpg" media="(max-width:767px)">
+                <img src="./img/me.jpg" alt="Profile Picture" style="width: 230px; height: auto" class="profile-pic">
+              </picture>
+            </div>
 
-
+            <div class="col-md-6" id="description2">
+              <h2>My Story</h2>
+              <p>
+                Hello, my name is Zarah-Faye La, and I am based in Vienna,
+                Austria.
+              </p>
+              <p>
+                I come from a background in Interior and Surface Design as well
+                as Graphic Design, which has given me a strong foundation in
+                visual storytelling, layout, and creative problem-solving. Over
+                time, I realized that I am particularly passionate about
+                designing experiences that are both visually appealing and
+                user-friendly, which led me to expand my skills into the field
+                of UX and UI design.
+              </p>
+              <p>
+                Currently, I am focused on developing my expertise as a
+                Graphic/UX Designer, combining my design sensibility with
+                user-centered thinking. I enjoy the entire design process — from
+                research and ideation to wireframing, prototyping, and testing —
+                and I enjoy turning ideas and insights into easy-to-use and
+                attractive designs.
+              </p>
+              <p>
+                My multidisciplinary background allows me to approach projects
+                with both an artistic eye and a practical mindset, ensuring that
+                the solutions I create are functional, accessible, and engaging.
+                I thrive in collaborative environments and am motivated by
+                projects that challenge me to grow, work across disciplines, and
+                design with real impact in mind.
+              </p>
+              <a href="./files/la_cv.pdf" class="button contact" download
+                >Download my CV</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
 
       <div id="skillstools" class="container">
         <h2>Skills and Tools</h2>
-          <div class="row">
+        <div class="row">
           <div class="col-md-6">
-          <h3>Relevant Skills</h3>
-        <ul>
-          <li>User Research</li>
-          <li>User Flows & Information Architecture</li>
-          <li>Wireframing & Prototyping (low to high)</li>
-          <li>Accessibility & Inclusivity</li>
-          <li>Problem-Solving</li>
-          <li>Usability Testing & Iteration</li>
-        </ul>
-      </div>
-    
-      <div class="col-md-6">
-          <h3>Tools</h3>
-          <ul>
-            <li>Figma</li>
-            <li>Canva</li>
-            <li>Illustrator</li>
-            <li>Photoshop</li>
-            <li>Uxtweak</li>
-          </ul>
-      </div>
-      </div>
-    </div>
-  </main>
+            <h3>Relevant Skills</h3>
+            <ul>
+              <li>User Research</li>
+              <li>User Flows & Information Architecture</li>
+              <li>Wireframing & Prototyping (low to high)</li>
+              <li>Accessibility & Inclusivity</li>
+              <li>Problem-Solving</li>
+              <li>Usability Testing & Iteration</li>
+            </ul>
+          </div>
 
-
-
-  <footer id="footer">
-    <div class="container">
-      <div>
-      <h2>Get in Touch!</h2>
-      <p>Do you like my work and want to discuss opportunities?</p>
-      <a href="contact.html" id=buttonfooter class="button">Let's chat!</a>
+          <div class="col-md-6">
+            <h3>Tools</h3>
+            <ul>
+              <li>Figma</li>
+              <li>Canva</li>
+              <li>Illustrator</li>
+              <li>Photoshop</li>
+              <li>Uxtweak</li>
+            </ul>
+          </div>
+        </div>
       </div>
+    </main>
 
-      <div id="socials">
-        <a href="https://www.linkedin.com/in/zarah-faye-la-5a1b7a211" target="_blank" rel="noopener noreferrer">
-        <svg width="30" height="30" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;" version="1.1" viewBox="0 0 512 512"  xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g id="g5891"><path d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z" id="background" style="fill:#2867b2;"/><g id="shapes"><rect height="257.962" id="rect11" style="fill:#fff;" width="85.76" x="61.053" y="178.667"/><path d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z" id="path13-0" style="fill:#fff;fill-rule:nonzero;"/><path d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z" id="path15" style="fill:#fff;fill-rule:nonzero;"/></g></g></svg>
-        </a>
-        <a href="https://www.behance.net/zarah-fayela1" target="_blank" rel="noopener noreferrer">
-        <svg width="30" height="30px" id="Layer_1" version="1.1" viewBox="0 0 56.693 56.693" xml:space="preserve" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><g><path d="M23.556,29.975c0,0,4.701-0.35,4.701-5.863c0-5.514-3.846-8.206-8.719-8.206h-8.97h-0.263H3.503v30.815h6.802h0.263h8.97   c0,0,9.788,0.309,9.788-9.096C29.325,37.625,29.753,29.975,23.556,29.975z M10.568,21.383h7.815h1.154c0,0,2.18,0,2.18,3.205   c0,3.207-1.283,3.672-2.736,3.672h-8.414V21.383z M19.084,41.244c-0.237,0.006-0.438,0-0.573,0h-7.943V33.01h8.97   c0,0,3.249-0.043,3.249,4.23C22.786,40.846,20.36,41.217,19.084,41.244z"/><path d="M42.382,23.746c-11.85,0-11.84,11.84-11.84,11.84s-0.812,11.779,11.84,11.779c0,0,10.545,0.602,10.545-8.195h-5.424   c0,0,0.18,3.314-4.941,3.314c0,0-5.422,0.361-5.422-5.363h15.967C53.106,37.121,54.854,23.746,42.382,23.746z M37.079,33.01   c0,0,0.662-4.75,5.422-4.75c4.762,0,4.699,4.75,4.699,4.75H37.079z"/><rect height="3.795" width="12.711" x="35.753" y="17.721"/></g></svg>
-        </a>
+    <footer id="footer">
+      <div class="container">
+        <div>
+          <h2>Get in Touch!</h2>
+          <p>Do you like my work and want to discuss opportunities?</p>
+          <a href="contact.html" id="buttonfooter" class="button"
+            >Let's chat!</a
+          >
+        </div>
+
+        <div id="socials">
+          <a
+            href="https://www.linkedin.com/in/zarah-faye-la-5a1b7a211"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              width="30"
+              height="30"
+              style="
+                fill-rule: evenodd;
+                clip-rule: evenodd;
+                stroke-linejoin: round;
+                stroke-miterlimit: 2;
+              "
+              version="1.1"
+              viewBox="0 0 512 512"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <g id="g5891">
+                <path
+                  d="M512,64c0,-35.323 -28.677,-64 -64,-64l-384,0c-35.323,0 -64,28.677 -64,64l0,384c0,35.323 28.677,64 64,64l384,0c35.323,0 64,-28.677 64,-64l0,-384Z"
+                  id="background"
+                  style="fill: #2867b2"
+                />
+                <g id="shapes">
+                  <rect
+                    height="257.962"
+                    id="rect11"
+                    style="fill: #fff"
+                    width="85.76"
+                    x="61.053"
+                    y="178.667"
+                  />
+                  <path
+                    d="M104.512,54.28c-29.341,0 -48.512,19.29 -48.512,44.573c0,24.752 18.588,44.574 47.377,44.574l0.554,0c29.903,0 48.516,-19.822 48.516,-44.574c-0.555,-25.283 -18.611,-44.573 -47.935,-44.573Z"
+                    id="path13-0"
+                    style="fill: #fff; fill-rule: nonzero"
+                  />
+                  <path
+                    d="M357.278,172.601c-45.49,0 -65.866,25.017 -77.276,42.589l0,-36.523l-85.738,0c1.137,24.197 0,257.961 0,257.961l85.737,0l0,-144.064c0,-7.711 0.554,-15.42 2.827,-20.931c6.188,-15.4 20.305,-31.352 43.993,-31.352c31.012,0 43.436,23.664 43.436,58.327l0,138.02l85.741,0l0,-147.93c0,-79.237 -42.305,-116.097 -98.72,-116.097Z"
+                    id="path15"
+                    style="fill: #fff; fill-rule: nonzero"
+                  />
+                </g>
+              </g>
+            </svg>
+          </a>
+          <a
+            href="https://www.behance.net/zarah-fayela1"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg
+              width="30"
+              height="30px"
+              id="Layer_1"
+              version="1.1"
+              viewBox="0 0 56.693 56.693"
+              xml:space="preserve"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <g>
+                <path
+                  d="M23.556,29.975c0,0,4.701-0.35,4.701-5.863c0-5.514-3.846-8.206-8.719-8.206h-8.97h-0.263H3.503v30.815h6.802h0.263h8.97   c0,0,9.788,0.309,9.788-9.096C29.325,37.625,29.753,29.975,23.556,29.975z M10.568,21.383h7.815h1.154c0,0,2.18,0,2.18,3.205   c0,3.207-1.283,3.672-2.736,3.672h-8.414V21.383z M19.084,41.244c-0.237,0.006-0.438,0-0.573,0h-7.943V33.01h8.97   c0,0,3.249-0.043,3.249,4.23C22.786,40.846,20.36,41.217,19.084,41.244z"
+                />
+                <path
+                  d="M42.382,23.746c-11.85,0-11.84,11.84-11.84,11.84s-0.812,11.779,11.84,11.779c0,0,10.545,0.602,10.545-8.195h-5.424   c0,0,0.18,3.314-4.941,3.314c0,0-5.422,0.361-5.422-5.363h15.967C53.106,37.121,54.854,23.746,42.382,23.746z M37.079,33.01   c0,0,0.662-4.75,5.422-4.75c4.762,0,4.699,4.75,4.699,4.75H37.079z"
+                />
+                <rect height="3.795" width="12.711" x="35.753" y="17.721" />
+              </g>
+            </svg>
+          </a>
+        </div>
+        <h5>©2025</h5>
       </div>
-      <h5>©2025</h5>
-    </div>
-    
-  </footer>
-   <script
-      src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous">
-  </script>
-  <script src="js/scripts.js"></script>
+    </footer>
+    <script
+      src="https://code.jquery.com/jquery-3.7.1.min.js"
+      integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo="
+      crossorigin="anonymous"
+    ></script>
+    <script src="js/scripts.js"></script>
   </body>
 </html>

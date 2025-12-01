@@ -196,9 +196,6 @@ header nav a:hover {
 } */
 
 
-
-
-
 .navtoggle li:not(:last-child) {
   display: none;
 }
