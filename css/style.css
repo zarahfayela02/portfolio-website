@@ -640,7 +640,7 @@ footer .button.contact {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-      width: 100%;
+    width: 100%;
   }
 
   .hamburger {
@@ -649,15 +649,15 @@ footer .button.contact {
   }
 
   header nav ul {
-  display: column;
-  flex-direction: column; 
+  display: flex;
+  /* flex-direction: column-reverse;  */
   }
 
   nav ul {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     gap: 30px;
-    margin-top: 10px;
+    margin-top: 10px; */
     justify-content: center;
     width: 100%;
   }
@@ -724,6 +724,42 @@ footer .button.contact {
     padding: 15px 20px;
   }
 
+
+  header nav ul {
+  display: flex;      
+  list-style: none;  
+  justify-content: center;
+  margin: 0;
+  padding: 0px;
+  gap: 10px;          
+  align-items: center;
+      flex-direction: column;
+
+  }
+
+  header nav {
+  width: 100%;
+  text-align: center; 
+  }
+
+
+  header nav ul li.icon {
+    order: 0;
+  }
+
+   /* Then your menu items in correct order */
+  header nav ul li.work {
+    order: 1;
+  }
+
+  header nav ul li.about {
+    order: 2;
+  }
+
+  header nav ul li.contact {
+    order: 3;
+  }
+
   header .container {
     flex-direction: column;
     align-items: flex-start;
@@ -731,7 +767,7 @@ footer .button.contact {
   }
 
   header nav ul {
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
   }
 
